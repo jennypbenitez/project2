@@ -1,0 +1,582 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary
+{
+    display:block;
+}
+
+/***************************************************Header***********************************************/
+header {
+  width: 100%;
+  overflow: hidden;
+	height: 150px;
+}
+
+.desktop-nav {
+	display: none;
+}
+
+.logo {
+	float: left;
+	margin: 50px 50px;
+}
+/***************************************************End Header***********************************************/
+
+
+
+/***************************************************Hamburger Menu**********************************************/
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:42px 30px 0px 15px;
+  color: black;
+  border:0;
+  font-size:2em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top: 0;
+  right:0;
+  padding:44px 30px 0px 15px;
+  color: black;
+  border:0;
+  font-size:4em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color: black}
+.menu ul li a:hover {  color: black; text-decoration:none;}
+.menu a{text-decoration:none; color:black}
+.menu a:hover{text-decoration:none; color:#666;}
+/***************************************************End Hamburger Menu**********************************************/
+
+
+
+/***************************************************Sticky Footer***********************************************/
+.site {
+	display: flex;
+	min-height:100vh;
+	flex-direction: column;
+}
+
+.site-content {
+	flex: 1;
+}
+/***************************************************End Sticky Footer***********************************************/
+
+
+
+/***************************************************Footer***********************************************/
+#footer-container {
+  color: white;
+  text-align: center;
+  width: 100%;
+  line-height: 20px;
+  background-color: black;
+}
+.footer {
+  float: left;
+  width: 25%;
+  background-color: black;
+  height: auto;
+  padding-top: 20px;
+}
+
+.footer p {
+  font-family: 'avenir', sans-serif;
+  font-size: .8rem;
+}
+
+h5{
+  padding-bottom: 5px;
+  font-size: .9rem;
+  font-family: 'didot', serif;
+}
+
+.fab {
+  padding: 6px 8px;
+}
+
+.submit-join {
+  padding: 4px 7px;
+  color: white;
+  background: black;
+  border: solid 1px white;
+  font-weight: bold;
+  margin: auto;
+  font-family: 'avenir', sans-serif;
+  font-size: .7rem;
+}
+
+.submit-join:hover {
+  color: #dddddd;
+}
+
+.email-input {
+  padding: 5px 5px 7px 0;
+}
+input {
+  padding: 6px;
+}
+/***************************************************End Footer***********************************************/
+
+
+
+/***************************************************About Us Page***********************************************/
+
+
+aside {
+  font-family: 'didot', serif;
+	width: 250px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.outter{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+	padding-bottom: 20px;
+	margin: auto;
+}
+
+.video-container {
+  height: 500px;
+  width:100%;
+  position: relative;
+  overflow: hidden;
+	margin: auto;
+}
+
+video {
+  object-fit: cover;
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+.video-container:after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(black, .2);
+  z-index: 1;
+}
+
+.callout {
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  margin:auto;
+}
+
+
+article {
+  width: 90%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1rem;
+  font-family: 'avenir', serif;
+	margin: auto;
+	padding-bottom: 10px;
+	color: white;
+}
+
+/***************************************************End About Us Page***********************************************/
+
+
+
+/***************************************************Menu***********************************************/
+
+
+.menu-label {
+  text-align: center;
+  padding-top: 20px;
+  font-family: 'avenir', sans-serif;
+  font-size: 15px;
+}
+
+h4 {
+  padding-top: 10px;
+}
+
+.food-container {
+  text-align: center;
+  font-family: 'didot', serif;
+  font-size: 18px;
+}
+
+.food {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.french-toast-food {
+  padding: 20px;
+  margin-top: 35px;
+}
+
+.tomato-quiche-food {
+  padding: 20px;
+}
+
+.feliz-brunch-food {
+  padding: 20px;
+}
+
+.croissant-food {
+  padding: 20px;
+}
+
+
+.beverage-container {
+  text-align: center;
+  font-family: 'didot', serif;
+  font-size: 18px;
+}
+
+.beverage {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.french-vanilla-drink {
+    padding: 20px;
+}
+
+.caramel-frappe-drink {
+    padding: 20px;
+}
+
+.cold-brew-drink {
+    padding: 20px;
+    margin-top: 35px;
+}
+
+.iced-latte-drink {
+    padding: 20px;
+}
+/***************************************************End Menue***********************************************/
+
+
+
+/***************************************************Shop Page***********************************************/
+.shop {
+  margin-left: 120px;
+  margin-bottom: 0px;
+  font-family: 'didot', serif;
+  font-size: 18px;
+}
+
+#shopcafe-container {
+  text-align: center;
+}
+
+.coffee-bag {
+  height: 200px;
+  width: 200px;
+}
+
+.coffee {
+  padding: 20px;
+  font-family: 'didot', serif;
+}
+
+.dot {height: 200px;
+  width: 200px;
+  background-color: rgb(153, 77, 0);
+  background-image:url('images/11147.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #dddddd;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px;
+  border: solid 1.5px black;
+  font-weight: bold;
+  font-family: 'avenir', sans-serif;
+}
+
+.add-to-cart {
+  margin-top: 20px;
+}
+/***************************************************End Shop Page***********************************************/
+
+
+
+/***************************************************Contact Us Page***********************************************/
+.contact-us {
+  margin-left: 90px;
+  margin-bottom: 0px;
+  font-family: 'didot', serif;
+}
+
+.contact-form {
+  padding: 50px;
+  margin: auto;
+}
+
+.input-section input[type=text], textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.input-section input[type=email] {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.input-section label::selection {
+  background: black;
+  color: white;
+}
+
+.submit input {
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px;
+  border: solid 1.5px black;
+  font-weight: bold;
+  font-family: 'avenir', sans-serif;
+}
+
+.contact-us-submit:hover {
+  background-color: #dddddd;
+}
+
+.form_label {
+  display: block;
+  text-align: left;
+  margin-left: 25%;
+  font-family: 'avenir', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.comments label:after {
+  content: "Send Us A Message!";
+  color: black;
+  font-size: 12px;
+  font-family: 'avenir', sans-serif;
+}
+
+
+
+/***************************************************Media Queries***********************************************/
+
+@media (min-width: 990px) {
+
+
+
+	.split-container {
+		display: flex;
+		flex-direction: row;
+		align-content: center;
+		}
+
+
+	.about-image {
+		width: 50%;
+		padding: 0;
+		margin: 0;
+	}
+
+	@media (max-width: 870px) {
+		.logo {
+			float: none;
+			display: flex;
+			justify-content: center;
+		}
+	}
+	}
+
+
+	@media (max-width: 870px) {
+		.logo {
+			float: none;
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+
+	@media (min-width: 871px) {
+
+			.hamburger, .cross, .menu {
+				display: none;
+			}
+
+			.desktop-nav {
+				display: block;
+				text-align: center;
+				align-items: center;
+				margin: 60px;
+			}
+
+
+			.desktop-nav a {
+			  color: black;
+			  font-size: 1.3rem;
+			  text-decoration: none;
+			  font-weight: bold;
+			  font-family: 'avenir next condensed', sans-serif;
+			}
+
+			.desktop-nav a:hover {
+			  color: #dddddd;;
+			}
+
+			.desktop-nav ul li {
+			  display: inline-block;
+				padding: 0 50px;
+			}
+
+	}
+
+	@media (max-width: 1160px) and (min-width: 960px) {
+
+		.desktop-nav ul li {
+			padding: 0 30px;
+		}
+	}
+
+	@media (max-width: 961px) and (min-width: 870px) {
+
+		.desktop-nav ul li {
+			padding: 0 20px;
+		}
+	}
+
+
+	@media (max-width: 920px) {
+		.shop-now {
+			min-height: 100px;
+			overflow: hidden
+		}
+
+		.shop-now-desc {
+			width: 75%;
+		}
+	}
+
+	@media (max-width: 350px) {
+		.quote {
+			height: auto;
+			overflow: hidden;
+			padding: 30px 0;
+		}
+	}
+
+	@media (max-width: 590px) {
+		.footer {
+			float: none;
+			margin: auto;
+		}
+
+		h5 {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+		}
+
+		.fab {
+			padding: 2px 0;
+		}
+
+		.submit-join {
+		margin: 5px 0;
+
+		}
+	}
+
+	@media (min-width: 1010px) {
+		.food-container{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.beverage-container {
+			display: flex;
+		  align-items: center;
+		  justify-content: center;
+		}
+
+		#shopcafe-container {
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		}
+	}
+
+	@media (min-width: 1130px) {
+		.outter {
+			padding: 20px;
+			max-width:1000px;
+		}
+	}
+
+	@media (min-width: 500px) {
+		.callout {width: 70%;
+		}
+	}
